@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Ultimate F — Guinness World Record</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="gwr-header">
+    <div class="gwr-badge">
+      <span class="gwr-badge-top">OFFICIALLY</span>
+      <span class="gwr-badge-mid">AMAZING</span>
+      <span class="gwr-badge-bot">RECORD HOLDER</span>
+    </div>
+    <h1 class="gwr-title">THE ULTIMATE&nbsp;<span class="big-f">F</span></h1>
+    <p class="gwr-subtitle">The longest string of &ldquo;f&rdquo; typed manually by a human</p>
+  </header>
+
+  <main class="dashboard">
+
+    <section class="hero-panel">
+      <p class="hero-label">OFFICIAL &ldquo;F&rdquo;S RECORDED</p>
+      <p class="hero-count" id="f-count">0</p>
+      <div class="rank-row">
+        <span class="rank-emoji" id="rank-emoji">🥚</span>
+        <div class="rank-info">
+          <span class="rank-title" id="rank-title">Unregistered Beginner</span>
+          <div class="rank-bar-track">
+            <div class="rank-bar-fill" id="rank-bar"></div>
+          </div>
+          <span class="rank-next" id="rank-next">—</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-icon">🫡</span>
+        <span class="stat-value" id="stat-respects">0</span>
+        <span class="stat-name">Respects Paid (Pay Respects)</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon">🔥</span>
+        <span class="stat-value" id="stat-calories">0 kcal</span>
+        <span class="stat-name">Calories burned by your finger</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon">📏</span>
+        <span class="stat-value" id="stat-travel">0 m</span>
+        <span class="stat-name">Key travel distance (up &amp; down)</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon">📜</span>
+        <span class="stat-value" id="stat-textlen">0 m</span>
+        <span class="stat-name">Length of text written</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon">⏱️</span>
+        <span class="stat-value" id="stat-time">0 min</span>
+        <span class="stat-name">Estimated typing time</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon">🏛️</span>
+        <span class="stat-value" id="stat-pyramid">0 %</span>
+        <span class="stat-name">Of the Great Pyramid (in f-blocks)</span>
+      </div>
+    </section>
+
+    <section class="cadence-box" id="cadence-box">
+      <h2 class="cadence-heading">🎹 Live Cadence Monitor (Anti-Rock)</h2>
+      <p class="cadence-instr">
+        Click the field below and type &ldquo;f&rdquo; like you do in the code.
+        I analyze the interval between keystrokes: a rock / auto-repeat = the
+        same interval forever &rarr; you're caught. A human always has
+        micro-variations.
+      </p>
+      <input
+        type="text"
+        id="cadence-input"
+        class="cadence-input"
+        placeholder="Type f f f f f here…"
+        autocomplete="off"
+        spellcheck="false"
+      />
+      <div class="cadence-stats">
+        <div><span id="cad-count">0</span><small>&ldquo;f&rdquo; keystrokes</small></div>
+        <div><span id="cad-interval">— ms</span><small>average interval</small></div>
+        <div><span id="cad-variation">— %</span><small>variation (CV)</small></div>
+      </div>
+      <p class="cadence-verdict" id="cad-verdict">Waiting for first keystrokes…</p>
+      <button type="button" id="cad-reset" class="cadence-reset">Reset</button>
+    </section>
+
+    <section class="audit-box audit-pass" id="audit-box">
+      <h2 class="audit-heading">
+        🛡️ Anti-Cheat / Anti-Vijai™ Department
+      </h2>
+      <p class="audit-verdict" id="audit-verdict">VALIDATED BY A HUMAN 🧑‍💻</p>
+      <ul class="audit-flags" id="audit-flags"></ul>
+      <p class="audit-disclaimer">
+        100% fictional check: confirms the &ldquo;f&rdquo;s were placed by a
+        human finger, not by a physical rock on the keyboard or a script.
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="gwr-footer">
+    <p>Last sync: <span id="last-sync">—</span></p>
+    <p class="footer-note">
+      To add to the record, open <code>record_data.js</code> and type
+      &ldquo;f&rdquo; manually. Reload the page to see the new count.
+    </p>
+  </footer>
+
+  <script src="record_data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
